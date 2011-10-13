@@ -1,0 +1,43 @@
+
+Studienangebot.java:
+
+Methoden:
+
+.add(LVA);	//LVA vom Typ "LVA" hinzufügen, wenn lva-nummer schon existiert -> throws AddLVAException
+
+.getLVAs();	//Auflistung von allen LVAs mit nummer, titel, frühester anmeldetermin, spätester, abmeldetermin, anzahl der studierenden!!
+
+
+
+
+LVA.java 
+
+Konstruktor	(String Titel, String LVANr, Date 'beginSign', Date 'endSign', Date 'endLogOff')
+
+Methoden:
+
+.signIn(Student)	//Anmeldung, wenn außerhalb Anmeldezeitraum oder Student schon on LVA -> throws SignInException
+
+.logOff(Student)	//Abmeldung, wenn außerhalb throws LogOffException
+
+.getStudents()		//Ausgabe: LVA Titel LVA-Nummer + Auflistung aller Studenten (Name+MatrNr)
+
+.getCount()		//Integer wert (Anzahl der angemeldeten Studenten)
+
+.getLVANr()		//LVANr zurückgeben (für Studienangebot zum überprüfen ob nummer schon existiert)
+
+
+
+Student.java:
+
+Konstruktor	(String name, String matrNr)
+
+Methoden:
+
+.toString()	//Ausgabe des Namens + " " + MatrNr
+
+
+
+
+
+
